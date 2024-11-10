@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: black;
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec1 {
+  display: flex;
+  background-color: black;
+}
+
+.card {
+  display: flex;
+  width: 384px;
+  height: 611px;
+  flex-direction: column;
+  background-color: #1f1f1f;
+  align-items: center;
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.card__image-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .card__name-head {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 4px;
+    margin-top: 24px;
+  }
+
+  .card__front-end {
+    font-size: 14px;
+    margin-bottom: 24px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: white;
+  }
+}
+
+.card__address-london {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #c4f82a;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.card__head-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ULS */
+
+.sitenav__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 16px;
+}
+
+.sitenav__item {
+}
+
+.sitenav__links {
+  color: white;
+
+  width: 304px;
+  height: 45px;
+  background-color: #333333;
+  border-radius: 8px;
+  gap: 8px;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: rgba(196, 248, 42, 0.7);
+    color: #e4e0e0;
+    opacity: 100%;
+  }
+
+  &:active {
+    background-color: #c4f82a;
+    color: #333333;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 780px) {
+  .sitenav__item {
+    width: 279px;
+    height: 45px;
+    gap: 16px;
+  }
+
+  .card__front-end {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: white;
+  }
+  .card{
+    padding: 24px;
+  }
+
+}
